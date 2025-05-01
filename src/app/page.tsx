@@ -1,9 +1,17 @@
-import Image from "next/image";
+import ThemeToggle from "@/components/shared/toggle-theme";
+import { Button } from "@/components/ui/button";
+
 
 export default function Home() {
   return (
   <div>
-    <h1 className="font-bold uppercase text-2xl">Hola </h1>
+
+  <div className="w-100 flex justify-end">
+    <ThemeToggle/>
+  </div>
+  <h1 className="font-Barlow text-xl uppercase">Bienvenido usuario</h1>
+    <Button variant='default'> Bienvenido</Button>
+   
   </div>
   );
 }
